@@ -1,5 +1,4 @@
 <?php
-
 // Print current date
 echo date('Y-m-d H:i:s')."<br>";
 // Print yesterday
@@ -23,3 +22,5 @@ echo '<pre>';
 var_dump($parsedDate);
 print_r($parsedDate);
 echo '</pre>';
+
+//die
