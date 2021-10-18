@@ -56,7 +56,7 @@ function giaiPhuongTrinhBac2($a, $b, $c)
     <meta name="description" content="PHP practice">
     <meta name="author" content="Trugtie">
     <meta name="keywords" content="PHP, PHPPractice">
-    <title>Document</title>
+    <title>PTB2</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
