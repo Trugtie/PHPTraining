@@ -1,10 +1,11 @@
-<?php 
-    function randomColor(){
-        $colors = ["#50cbf7","#00b298","#8ec545","#fcad2c","#ef3564"];
-        $color="";
-        $color=$colors[rand(0,count($colors)-1)];
-        return $color;
-    }
+<?php
+function randomColor()
+{
+    $colors = ["#50cbf7", "#00b298", "#8ec545", "#fcad2c", "#ef3564"];
+    $color = "";
+    $color = $colors[rand(0, count($colors) - 1)];
+    return $color;
+}
 ?>
 
 <!DOCTYPE html>
@@ -22,26 +23,32 @@
 </head>
 
 <body>
+    <header>
+        <h1>BẢNG CỬU CHƯƠNG</h1>
+    </header>
     <section>
         <div class="container">
             <?php
             $i = 1;
             $j = 0;
-            while($i<=10){
+            while ($i <= 10) {
                 $colorRandom = randomColor();
                 echo "<div class='cuuchuong-container' style='background-color: $colorRandom '>";
-                while($j<10){
-                    $result=$i*$j;
+                while ($j < 10) {
+                    $result = $i * $j;
                     echo "$i x $j = $result <br>";
                     $j++;
                 }
                 echo "</div>";
                 $i++;
-                $j=0;
+                $j = 0;
             }
             ?>
         </div>
     </section>
+    <footer>
+        Author: Trugtie
+    </footer>
 </body>
 
 </html>
