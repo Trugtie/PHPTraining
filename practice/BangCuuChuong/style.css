@@ -57,7 +57,12 @@ img{
 
 a{
     text-decoration: none;
+    color:var(--main-color);
 }
+a:visited{
+    color:var(--main-color);
+}
+
 
 p{
     font-size: 1.6rem;

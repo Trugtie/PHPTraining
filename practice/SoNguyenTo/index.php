@@ -59,6 +59,7 @@
 include "./function.php";
 kiemTraSNT(7);
 kiemTraSHT(6);
-
-
-
+$arr = array(9, 3, 5, 8, 6);
+$arrstr=implode(",",$arr);
+echo "Mang so nguyen to: $arrstr<br>";
+locMangSNTvaSHT($arr);

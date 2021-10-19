@@ -52,23 +52,23 @@ function randomColor()
             <h1>MẢNG MỘT CHIỀU</h1>
         </header>
         <div class="container" style="display:flex; justify-content:center;">
-            <div class='cuuchuong-container' style="max-width: 100rem;width:100%;">
+            <div class='cuuchuong-container' style="max-width:100%; margin-top:3rem;     flex-grow: 1;">
                 <?php
-                $array = [2, 5, 6, 8, 1];
+                $array = [3, 2, 7, 8, 6];
                 $arrayStr = implode(",", $array);
-                echo "Mảng một chiều: $arrayStr";
-                echo $max = max($array) . "<br>";
-                echo $min = min($array) . "<br>";
+                echo "Mảng một chiều:[$arrayStr]<br>";
+                echo "Số lớn nhất:".max($array). "<br>";
+                echo "Số nhỏ nhất:".min($array). "<br>";
                 $array = explode(",", $arrayStr);
                 sort($array);
                 $arrayStr = implode(",", $array);
-                echo "Mảng một chiều theo thứ tự tăng dần: $arrayStr";
+                echo "Mảng một chiều theo thứ tự tăng dần: [$arrayStr]";
                 ?>
             </div>
         </div>
     </section>
     <footer>
-        Author: Trugtie
+        Author: <a href="https://github.com/Trugtie">Trugtie</a>
     </footer>
 </body>
 
