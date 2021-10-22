@@ -1,13 +1,4 @@
-<?php
-function randomColor()
-{
-    $colors = ["#50cbf7", "#00b298", "#8ec545", "#fcad2c", "#ef3564"];
-    $color = "";
-    $color = $colors[rand(0, count($colors) - 1)];
-    return $color;
-}
-?>
-
+<?php include "./function.php"?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,13 +45,12 @@ function randomColor()
         <div class="container" style="display:flex; justify-content:center;">
             <div class='cuuchuong-container' style="max-width:100%; margin-top:3rem;     flex-grow: 1;">
                 <?php
-                $array = [3, 2, 7, 8, 6];
+                $array = [3,"b",2,"a", 7,"c", 8, 6,"s"];
                 $arrayStr = implode(",", $array);
                 echo "Mảng một chiều:[$arrayStr]<br>";
-                echo "Số lớn nhất:".max($array). "<br>";
-                echo "Số nhỏ nhất:".min($array). "<br>";
-                $array = explode(",", $arrayStr);
-                sort($array);
+                echo "Số lớn nhất: ".maxNum($array). "<br>";
+                echo "Số nhỏ nhất: ".minNum($array). "<br>";
+                $array=orderArr($array);
                 $arrayStr = implode(",", $array);
                 echo "Mảng một chiều theo thứ tự tăng dần: [$arrayStr]";
                 ?>
