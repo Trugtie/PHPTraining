@@ -45,7 +45,7 @@
         <div class="container" style="display:flex; justify-content:center;">
             <div class='cuuchuong-container' style="max-width:100%; margin-top:3rem;     flex-grow: 1;">
                 <?php
-                $array = [3,"b",2,"a", 7,"c", 8, 6,"s"];
+                $array = [4,"x",3,8,"s", 6];
                 $arrayStr = implode(",", $array);
                 echo "Mảng một chiều:[$arrayStr]<br>";
                 echo "Số lớn nhất: ".maxNum($array). "<br>";
