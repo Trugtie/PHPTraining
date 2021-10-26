@@ -9,6 +9,8 @@
 </head>
 <body>
 <?php
+  echo phpinfo();
+  exit;
   echo "Hello world!";
   echo "<br/>";
   echo "Welcome Trugtie!";
