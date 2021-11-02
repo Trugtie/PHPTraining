@@ -17,9 +17,12 @@
         <input type="radio" name="rad_gender" value="Nữ"> Nữ
         <br>
         <select name="cbo_hoppies">
-            <option value="Ăn uống">Ăn uống</option>
-            <option value="Du lịch">Du lịch</option>
-            <option value="Chơi game">Chơi game</option>
+            <?php 
+            $arrSoThich = array("bd"=>"Bóng đá","cl"=>"Cầu lông","bc"=>"Bóng chuyền");
+            foreach($arrSoThich as $key => $value):
+            ?>
+            <option value="<?php echo $value ?>"><?php echo $value ?></option>
+            <?php endforeach; ?>
         </select>\
         <br>
         <input type="checkbox" name="chk_confirm"> Tôi đã đọc và chấp nhận điều khoản
